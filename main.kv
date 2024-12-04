@@ -1,0 +1,22 @@
+BoxLayout:
+    orientation : 'vertical'
+
+    Label:
+        text: 'Enter your name:'
+        font_size: 50
+
+    TextInput:
+        id: user_input
+        multiline: False
+        font_size: 50
+        hint_text: "gim liber"
+
+    Button:
+        text: 'Greet'
+        on_press: output_label.text= 'Hello, ' + user_input.text
+        font_size: 50
+
+    Label:
+        id: output_label
+        text: 'Welcome'
+        font_size: 50
